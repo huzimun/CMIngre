@@ -51,7 +51,7 @@
             <big>
             <ol>
             <li>Overview</li>
-            As shown in <a href="#annotation">Figure 3</a>, CMIngre consists of 8,001 image-text paris from three sources, where 1,719 from dishes, 2,330 from recipes, and 3,952 from user-generated content(UGC).
+            As shown in <a href="#annotation">Figure 1</a>, CMIngre consists of 8,001 image-text paris from three sources, where 1,719 from dishes, 2,330 from recipes, and 3,952 from user-generated content (UGC).
             <ul>
             <li>Dish Images. As depicted in the second row, this category includes images of dishes paired with their names.</li>
             <li>Recipe Images. Shown in the third row, these data consist of recipe images accompanied by detailed recipe text.</li>
@@ -59,13 +59,13 @@
             </ul>
             <div style="text-align: center;" id="annotation">
                 <br>
-                <img src="./annotation.png" alt="annotations" width="50%" height="50%">
+                <img src="./annotation.png" alt="annotations" width="60%" height="60%">
                 <div>
                 Figure 1. Food images in CMIngre comes from three sources, where UGC refers to the user-generated content such as the user comment.
                 </div>
             </div>
             <br>
-            <li>Comparison with existing food datasets
+            <li>Comparison with Existing Food Datasets
             <div>We compare CMIngre with other food related datasets in <a href="#table1">Table 1</a>. It can be observed that existing food-related datasets mainly focus on the food recognition task, which aims to recognize the food category within the image. Although few datasets do provide annotations for food bounding boxes, their objective is to locate the entire dish, not the free-form ingredients. In contrast, Recipe 1M offers ingredient annotations for each food image. However, due to the absence of location annotations for these fine-grained ingredients, they only implicitly model the associations between entire food images and corresponding ingredients, limiting the model performance. Consequently, we introduce CMIngre, aimed at enhancing the understanding of Chinese food by ingredient detection and retrieval tasks.</div>
             <table id="table1" style="text-align: center;">
                 <br>
@@ -137,8 +137,19 @@
                 </tr>
             </table>
             </li>
-            <li>Tool
-            Introduction our classification system: effect and introduction~(how to use)
+            <li>Visualization Tools
+            <ul>
+                <li> Classification Tool: As shown in <a href="#ontology">Figure 2</a>, we categorize all ingredients into the appropriate leaf node of <a href="https://www.chinanutri.cn/fgbz/fgbzhybz/201707/t20170721_148433.html">a hierarchical ontology</a> through a classification tool, which is provided in the "knowledge" folder.</li>
+                <li> Fusing Tool: We review and merge ingredients with identical semantics under the same parent node through a fusing tool, which is provided in the "fusing" folder. </li>
+                <div style="text-align: center;" id="ontology">
+                    <br>
+                    <img src="./tree_example.png" alt="The ontology used to clean labels in CMIngre" width="60%" height="60%">
+                    <div>
+                    Figure 2. The ontology used to clean labels in CMIngre. In this figure, we show the complete sub-tree under the super-class “Dried beans and products”. The leaf nodes are ingredient labels after cleaning up and the non-leaf nodes are from the standard.
+                    </div>
+                </div>
+            </ul>
+            </li>
             </li>
             <li>Download</li>
             </ol>
@@ -153,19 +164,19 @@
             <ol>
             <li>Ingredient detection focuses on identifying the ingredients and providing precise location information within the image. For example, TODO, a figure </li>
             <li>Cross-modal ingredient retrieval aims to investigate the intricate relationship between the image and the composition of ingredients.
-            <div>We visualize top-5 retrieval results by randomly sampling a query object from dish, recipe, and UGC in the test set. As shown in <a href="#img2ingre">Figure 1</a>, the corresponding ingredient composition appears in the first index position of the retrieval list with the highest matching similarity, demonstrating the effectiveness of our proposed method. Similarly, as shown in <a href="#ingre2img">Figure 2</a>, the corresponding image appears in the first index position of the retrieval list with the highest matching similarity.</div>
+            <div>We visualize top-5 retrieval results by randomly sampling a query object from dish, recipe, and UGC in the test set. As shown in <a href="#img2ingre">Figure 3</a>, the corresponding ingredient composition appears in the first index position of the retrieval list with the highest matching similarity, demonstrating the effectiveness of our proposed method. Similarly, as shown in <a href="#ingre2img">Figure 4</a>, the corresponding image appears in the first index position of the retrieval list with the highest matching similarity.</div>
             <div style="text-align: center;" id="img2ingre">
                 <br>
-                <img src="./white_image_to_ingredient.png" alt="image to ingredient" width="50%" height="50%">
+                <img src="./white_image_to_ingredient.png" alt="image to ingredient" width="60%" height="60%">
                 <div>
-                Figure 2. The top-5 retrieval visualization of three random query images from dish, recipe, and UGC.
+                Figure 3. The top-5 retrieval visualization of three random query images from dish, recipe, and UGC.
                 </div>
             </div>
             <div style="text-align: center;" id="ingre2img">
                 <br>
-                <img src="./white_ingre_to_image.png" alt="ingredient to image" width="50%" height="50%">
+                <img src="./white_ingre_to_image.png" alt="ingredient to image" width="60%" height="60%">
                 <div>
-                Figure 3. The top-5 retrieval visualization of three query ingredient composition from different sources.
+                Figure 4. The top-5 retrieval visualization of three query ingredient composition from different sources.
                 </div>
             </div>
             </li>
