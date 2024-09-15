@@ -168,26 +168,37 @@
         <p>
             <big>
             Our dataset involves two tasks, i.e. ingredient detection and cross-modal ingredient retrieval.
-            <ol>
-                <li>Ingredient detection focuses on identifying the ingredients and providing precise location information within the image. For example, TODO, a figure </li>
-                <li>Cross-modal ingredient retrieval aims to investigate the intricate relationship between the image and the composition of ingredients.
-                    <div>We visualize top-5 retrieval results by randomly sampling a query object from dish, recipe, and UGC in the test set. As shown in <a href="#img2ingre">Figure 3</a>, the corresponding ingredient composition appears in the first index position of the retrieval list with the highest matching similarity, demonstrating the effectiveness of our proposed method. Similarly, as shown in <a href="#ingre2img">Figure 4</a>, the corresponding image appears in the first index position of the retrieval list with the highest matching similarity.</div>
-            <div style="text-align: center;" id="img2ingre">
-                <br>
-                <img src="./white_image_to_ingredient.png" alt="image to ingredient" width="50%" height="50%">
-                <div>
-                Figure 3. The top-5 retrieval visualization of three random query images from dish, recipe, and UGC.
+            <ul>
+                <li>Ingredient detection focuses on identifying the ingredients and providing precise location information within the image. As shown in <a href="#detection">Figure 3</a>, we locate and identify the ingredients in food images from dish, recipe, and UGC.
+                <div style="text-align: center;" id="detection">
+                    <br>
+                    <div class="image-container">
+                        <img src="./custom_image_caiming_36.png" alt="custom_image_caiming_36.png" style="width: 400px;height: 300px;margin: 3px;">
+                        <img src="./custom_image_caipu_56.png" alt="custom_image_caipu_56.png" style="width: 300px;height: 300px;margin: 3px;">
+                        <img src="./custom_image_ugc_268.png" alt="custom_image_ugc_268.png" style="width: 250px;height: 300px;margin: 3px;">
+                    </div>
+                    <div style="text-align: center;">
+                        Figure 3. The ingredient detection visualization of theree food images from dish, recipe, and UGC.
+                    </div>
                 </div>
-            </div>
-            <div style="text-align: center;" id="ingre2img">
-                <br>
-                <img src="./white_ingre_to_image.png" alt="ingredient to image" width="50%" height="50%">
-                <div>
-                Figure 4. The top-5 retrieval visualization of three query ingredient composition from different sources.
+                </li>
+                <li>Cross-modal ingredient retrieval aims to investigate the intricate relationship between the image and the composition of ingredients. We visualize top-5 retrieval results by randomly sampling a query object from dish, recipe, and UGC in the test set. As shown in <a href="#img2ingre">Figure 4</a>, the corresponding ingredient composition appears in the first index position of the retrieval list with the highest matching similarity. Similarly, as shown in <a href="#ingre2img">Figure 5</a>, the corresponding image appears in the first index position of the retrieval list with the highest matching similarity.
+                <div style="text-align: center;" id="img2ingre">
+                    <br>
+                    <img src="./white_image_to_ingredient.png" alt="image to ingredient" width="50%" height="50%">
+                    <div>
+                    Figure 4. The top-5 retrieval visualization of three random query images from dish, recipe, and UGC.
+                    </div>
                 </div>
-            </div>
-            </li>
-            </ol>
+                <div style="text-align: center;" id="ingre2img">
+                    <br>
+                    <img src="./white_ingre_to_image.png" alt="ingredient to image" width="50%" height="50%">
+                    <div>
+                    Figure 5. The top-5 retrieval visualization of three query ingredient composition from different sources.
+                    </div>
+                </div>
+                </li>
+            </ul>
             </big>
         </p>
     </div>
