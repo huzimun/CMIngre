@@ -173,9 +173,10 @@
                 <div style="text-align: center;" id="detection">
                     <br>
                     <div class="image-container">
-                        <img src="./custom_image_caiming_36.png" alt="custom_image_caiming_36.png" style="width: 400px;height: 300px;margin: 3px;">
+                        <!-- <img src="./custom_image_caiming_36.png" alt="custom_image_caiming_36.png" style="width: 400px;height: 300px;margin: 3px;">
                         <img src="./custom_image_caipu_56.png" alt="custom_image_caipu_56.png" style="width: 300px;height: 300px;margin: 3px;">
-                        <img src="./custom_image_ugc_268.png" alt="custom_image_ugc_268.png" style="width: 250px;height: 300px;margin: 3px;">
+                        <img src="./custom_image_ugc_268.png" alt="custom_image_ugc_268.png" style="width: 250px;height: 300px;margin: 3px;"> -->
+                        <img src="./food_detection.png" alt="ingredient detection" width="80%" height="80%">
                     </div>
                     <div style="text-align: center;">
                         Figure 3. The ingredient detection visualization of theree food images from dish, recipe, and UGC.
