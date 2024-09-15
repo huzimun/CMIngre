@@ -39,8 +39,7 @@
         <h2>Introduction</h2>
         <p>
             <big>
-            This is the supplementary material for the paper "Toward Chinese Food Understanding: a Cross-Modal Ingredient-Level Benchmark". 
-            <!-- The web intends to provide more information about our dataset, including application tasks, comparison with other food datasets, a classification tool, and the download path. -->
+            This is the supplementary material for the paper "Toward Chinese Food Understanding: a Cross-Modal Ingredient-Level Benchmark" <a href="https://ieeexplore.ieee.org/document/10496846">[link]</a>.
             The web intends to release the dataset CMIngre in our paper and introduce related tasks and usage methods.
             </big> 
         </p>
@@ -154,7 +153,7 @@
             <li>Download
                 <div>
                     <ul>
-                        <li>Detection</li>
+                        <li>Ingredient Detection</li>
                         <li>Retrieval</li>
                     </ul>
                 </div>
