@@ -152,9 +152,11 @@
             </li>
             <li>Download
                 <div>
+                    <b>TODO</b>
                     <ul>
-                        <li>Ingredient Detection</li>
-                        <li>Retrieval</li>
+                        <li>确认数据集上传到huggingface</li>
+                        <li>确认要上传的数据集，从2003服务器上找到的一个VOC格式429个类8001张注释后图片的文件夹。这个数据集是用于目标检测的，食材检测和食材检索是否有两个不同的数据集，或者两个任务的数据集是一样的，只不过根据任务转换成了不同的格式。</li>
+                        <li>转换数据集的格式为CSV格式或者Parquet格式</li>
                     </ul>
                 </div>
             </li>
