@@ -163,10 +163,7 @@
             <h3 id='download'>E. Download</h3>
                 <big>
                 <div>
-                    <b>TODO</b>
-                    <ul>
-                        <li>数据集上传到huggingface</li>
-                    </ul>
+                    You can download CMIngre dataset from HuggingFace <a href='https://huggingface.co/datasets/huzimu/CMIngre'>[Dataset Card]</a>.
                 </div>                
                 </big>
     </div>
